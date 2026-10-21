@@ -8,5 +8,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
+
   protected readonly title = signal('espetaria');
+
+  cardapio: string[] = ["Espetinho de Alho","Espetinho de Carne"];
+
+
+
+  
+  
 }
