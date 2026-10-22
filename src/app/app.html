@@ -1,202 +1,49 @@
-html
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#11100f" />
-  <meta name="description"
-    content="Conheça o cardápio da Espetaria: espetos, acompanhamentos, porções e bebidas preparados com sabor de brasa." />
-  <title>Espetaria — Sabor de verdade, direto da brasa</title>
-  <link rel="stylesheet" href="/espetaria.css" />
-  <script src="/espetaria.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardapio Espetaria</title>
 </head>
 
-<body>
-  <header class="site-header">
-    <div class="header-inner"> <a class="brand" href="#inicio" aria-label="Espetaria, início"> <span class="brand-mark"
-          aria-hidden="true"><span></span><span></span><span></span></span> <span>espetaria<span
-            class="brand-dot">.</span></span> </a>
-      <nav class="main-nav" aria-label="Navegação principal"> <a class="nav-link active" href="#inicio">Início</a> <a
-          class="nav-link" href="#cardapio">Cardápio</a> <a class="nav-link" href="#contato">Contato</a> </nav> <a
-        class="header-cta" href="#cardapio">Conheça o cardápio <span aria-hidden="true">↗</span></a>
+<body style="padding: 1rem;margin-left: 15rem; margin-right:15rem">
+  <div class="primeira bloco">
+    <div class="caixa nav" style="display: flex; align-items: center;gap: 30rem;
+  padding: 1rem; ">
+
+      <header>Espetaria Alves</header>
+
+      <nav style="display: flex; gap: 3rem;">
+        <a href="https://google.com"> Ifood</a>
+        <a href="https://google.com"> Início </a>
+        <a href="https://google.com"> Contato </a>
+      </nav>
+
+      <nav>
+        <a href="https://google.com"> Ver Cardapio</a>
+      </nav>
     </div>
-  </header>
-  <main>
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-image" role="img" aria-label="Espetos dourados sendo preparados sobre a brasa"></div>
-      <div class="hero-content page-width">
-        <p class="eyebrow"><span class="eyebrow-line"></span> O verdadeiro sabor do fogo</p>
-        <h1 id="hero-title">Sabor de verdade,<br />direto da <em>brasa.</em></h1>
-        <p class="hero-copy">Tempero no ponto, brasa acesa e aquele sabor que reúne todo mundo. Confira nosso cardápio e
-          escolha seus favoritos.</p> <a class="button button-primary" href="#cardapio">Ver cardápio <span
-            aria-hidden="true">↓</span></a>
-        <div class="hero-note"><span class="fire-dot"></span> Feito na brasa, com tempo e cuidado</div>
-      </div>
-      <div class="hero-side-note" aria-hidden="true">TRADIÇÃO · SABOR · BRASA</div> <a class="scroll-cue"
-        href="#cardapio" aria-label="Role para conhecer o cardápio"><span></span></a>
-    </section>
-    <section class="menu-section section-space" id="cardapio" aria-labelledby="menu-title">
-      <div class="page-width">
-        <div class="section-heading menu-heading">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-line"></span> Da nossa brasa para sua mesa</p>
-            <h2 id="menu-title">Nosso <em>Cardápio</em></h2>
-            <p class="section-copy">Receitas caprichadas, ingredientes selecionados e o sabor inconfundível da brasa.
-            </p>
-          </div> <span class="menu-stamp"><span>Feito<br />na brasa</span><b aria-hidden="true">✳</b></span>
-        </div>
-        <div class="category-list" role="group" aria-label="Filtrar produtos por categoria"> <button
-            class="category-button is-selected" type="button" data-filter="todos" aria-pressed="true">Todos
-            <span>08</span></button> <button class="category-button" type="button" data-filter="espetos"
-            aria-pressed="false">Espetos <span>02</span></button> <button class="category-button" type="button"
-            data-filter="acompanhamentos" aria-pressed="false">Acompanhamentos <span>02</span></button> <button
-            class="category-button" type="button" data-filter="porcoes" aria-pressed="false">Porções
-            <span>02</span></button> <button class="category-button" type="button" data-filter="bebidas"
-            aria-pressed="false">Bebidas <span>02</span></button> </div>
-        <div class="product-grid">
-          <article class="product-card" data-category="espetos">
-            <div class="product-image-wrap"><img src="/images/espetaria-carne.png"
-                alt="Espeto de carne dourado na brasa" /><span class="product-tag">Da casa</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Espeto de Alcatra</h3><span class="product-price">R$ 18,00</span>
-              </div>
-              <p>Cortes macios, temperados no ponto e dourados na brasa.</p><span
-                class="product-category">ESPETOS</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="espetos">
-            <div class="product-image-wrap"><img src="/images/espetaria-frango.png"
-                alt="Espeto de coração de frango grelhado" /><span class="product-tag">Clássico</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Coração de Frango</h3><span class="product-price">R$ 14,00</span>
-              </div>
-              <p>Marinado com temperos da casa e finalizado na brasa.</p><span class="product-category">ESPETOS</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="acompanhamentos">
-            <div class="product-image-wrap"><img src="/images/espetaria-porcao.png"
-                alt="Porção de batatas douradas com ervas" /><span class="product-tag">Queridinho</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Batata da Casa</h3><span class="product-price">R$ 22,00</span>
-              </div>
-              <p>Batatas crocantes com ervas e molho especial.</p><span class="product-category">ACOMPANHAMENTOS</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="acompanhamentos">
-            <div class="product-image-wrap"><img src="/images/espetaria-carne.png"
-                alt="Farofa artesanal preparada para acompanhar os espetos" /><span class="product-tag">Artesanal</span>
-            </div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Farofa da Casa</h3><span class="product-price">R$ 9,00</span>
-              </div>
-              <p>Farofa douradinha, feita com carinho e toque especial.</p><span
-                class="product-category">ACOMPANHAMENTOS</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="porcoes">
-            <div class="product-image-wrap"><img src="/images/espetaria-porcao.png"
-                alt="Porção dourada para compartilhar à mesa" /><span class="product-tag">Para dividir</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Porção de Fritas</h3><span class="product-price">R$ 28,00</span>
-              </div>
-              <p>Porção generosa, crocante por fora e macia por dentro.</p><span class="product-category">PORÇÕES</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="porcoes">
-            <div class="product-image-wrap"><img src="/images/espetaria-frango.png"
-                alt="Espetinhos servidos com molho da casa" /><span class="product-tag">Da brasa</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Porção de Espetinhos</h3><span class="product-price">R$ 36,00</span>
-              </div>
-              <p>Uma seleção de espetinhos para aproveitar sem pressa.</p><span class="product-category">PORÇÕES</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="bebidas">
-            <div class="product-image-wrap"><img src="/images/espetaria-bebida.png"
-                alt="Refrigerante gelado com gelo" /><span class="product-tag">Geladinha</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Refrigerante</h3><span class="product-price">R$ 7,00</span>
-              </div>
-              <p>Lata 350 ml. Consulte os sabores disponíveis.</p><span class="product-category">BEBIDAS</span>
-            </div>
-          </article>
-          <article class="product-card" data-category="bebidas">
-            <div class="product-image-wrap"><img src="/images/espetaria-bebida.png"
-                alt="Bebida gelada servida com gelo" /><span class="product-tag">Sem álcool</span></div>
-            <div class="product-info">
-              <div class="product-title-row">
-                <h3>Suco Natural</h3><span class="product-price">R$ 10,00</span>
-              </div>
-              <p>Feito na hora. Consulte as frutas do dia.</p><span class="product-category">BEBIDAS</span>
-            </div>
-          </article>
-        </div>
-        <p class="menu-footnote">* Preços e itens apresentados como exemplo. Consulte a disponibilidade no local.</p>
-      </div>
-    </section>
-    <section class="about-section" id="sobre" aria-labelledby="about-title">
-      <div class="about-image" role="img" aria-label="Brasa acesa em uma churrasqueira tradicional"></div>
-      <div class="about-content">
-        <p class="eyebrow"><span class="eyebrow-line"></span> Um jeito nosso de fazer</p>
-        <h2 id="about-title">A brasa acesa.<br />A mesa <em>cheia.</em></h2>
-        <p>Na Espetaria, a gente acredita que comida boa começa com bons ingredientes e termina em volta de uma mesa.
-          Cada espeto é preparado com cuidado, respeitando o tempo do fogo e o prazer de compartilhar.</p>
-        <div class="about-values"><span><b>01</b> Tradição</span><span><b>02</b> Qualidade</span><span><b>03</b> Sabor
-            de brasa</span></div>
-      </div>
-    </section>
-    <section class="contact-section section-space" id="contato" aria-labelledby="contact-title">
-      <div class="page-width contact-inner">
-        <div class="contact-intro">
-          <p class="eyebrow"><span class="eyebrow-line"></span> Vai ser um prazer receber você</p>
-          <h2 id="contact-title">A gente se<br /><em>encontra por aqui.</em></h2>
-          <p>Preencha com as informações da sua unidade e deixe tudo pronto para a próxima visita.</p>
-        </div>
-        <div class="contact-details">
-          <div class="contact-item"><span class="contact-icon" aria-hidden="true">⌖</span>
-            <div>
-              <h3>Endereço</h3>
-              <p>[Insira o endereço da espetaria]<br />[Cidade — Estado]</p>
-            </div>
-          </div>
-          <div class="contact-item"><span class="contact-icon" aria-hidden="true">◷</span>
-            <div>
-              <h3>Horário</h3>
-              <p>[Insira os dias e horários de funcionamento]</p>
-            </div>
-          </div>
-          <div class="contact-item"><span class="contact-icon" aria-hidden="true">◉</span>
-            <div>
-              <h3>Telefone</h3>
-              <p>[Insira o telefone de contato]</p>
-            </div>
-          </div> <a class="whatsapp-link" href="https://wa.me/SEU_NUMERO"
-            aria-label="Substitua pelo link de WhatsApp da espetaria">WhatsApp <span>Substitua pelo link da sua
-              unidade</span><b aria-hidden="true">↗</b></a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="page-width footer-top"><a class="brand" href="#inicio"><span class="brand-mark"
-          aria-hidden="true"><span></span><span></span><span></span></span><span>espetaria<span
-            class="brand-dot">.</span></span></a>
-      <p>Sabor de verdade, direto da brasa.</p>
-      <nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a
-          href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+
+
+    <hr>
+    <div class="bloco meio" style="margin-top: 80px;display: flex; align-items: center;
+  padding: 1rem;">
+      <main>
+        <p>—— VERDADEIRO SABOR </p>
+        <h1 class="sabordeverdade">Sabor de verdade,<br> direto da brasa</h1>
+
+        <p>Tempero no ponto, brasa acesa e aquele sabor que reúne todo mundo.<br> Confira nosso cardápio e escolha seus
+          favoritos.</p>
+
+        <button>Ver Cardápio </button>
+
+      </main>
     </div>
-    <div class="page-width footer-bottom"><span>© <span id="current-year">2026</span> Espetaria. Todos os direitos
-        reservados.</span><span>Feito com fogo e carinho.</span></div>
-  </footer>
+
+  </div>
+
 </body>
 
-</html> 
+
+</html>
