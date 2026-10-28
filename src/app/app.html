@@ -1,73 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardapio Espetaria</title>
+  <title>Cardápio Espetaria Alves</title>
 </head>
 
-<body style="padding: 1rem;margin-left: 15rem; margin-right:15rem">
-  <div class="primeira bloco">
-    <div class="caixa nav" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+<body style="padding: 1rem; margin-left: 15rem; margin-right: 15rem">
 
+  <div class="primeira bloco" id="inicio">
+    <header class="caixa nav" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
 
       <div style="display: flex; align-items: center; gap: 1rem;">
-        <header style="font-weight: bold; font-size: 1.2rem;">Espetaria Alves</header>
+        <strong style="font-size: 1.2rem;">Espetaria Alves</strong>
 
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+        <!-- TROQUE pelo link do Instagram da espetaria -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Espetaria Alves"
           style="color: inherit; display: flex; align-items: center;">
-          <svg xmlns="http://w3.org" width="24" height="24" fill="currentColor" class="bi bi-instagram"
-            viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
             <path
               d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.33-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
           </svg>
         </a>
       </div>
 
-      <nav style="display: flex; gap: 3rem;">
-        <a href="https://google.com"> Ifood</a>
-        <a href="https://google.com"> Início </a>
-        <a href="https://google.com"> Contato </a>
+      <nav aria-label="Principal" style="display: flex; gap: 3rem;">
+        <!-- TROQUE pelo link da sua loja no iFood -->
+        <a href="https://www.ifood.com.br/" target="_blank" rel="noopener noreferrer">Ifood</a>
+        <a href="#inicio">Início</a>
+        <a href="#contato">Contato</a>
       </nav>
 
-      <nav>
-        <button href="https://google.com" style="padding: 1.1rem;"> Conheca o Cardapio ↗</button>
+      <nav aria-label="Atalho para o cardápio">
+        <a class="botao" href="#cardapio" style="display: inline-block; padding: 1.1rem;">Conheça o Cardápio &#8599;&#xFE0E;</a>
       </nav>
-    </div>
-
+    </header>
 
     <hr>
-    <div class="bloco meio" style="margin-top: 150px;display: flex; align-items: center; padding: 1rem;">
-      <main>
-        <p style="font-style: italic; font-size:0.9rem"> — O VERDADEIRO SABOR </p>
-        <h1 class="sabordeverdade" style="font-size:80px">Sabor de verdade,<br> direto da brasa</h1>
 
-        <p>Tempero no ponto, brasa acesa e aquele sabor que reúne todo mundo.<br> Confira nosso cardápio e escolha seus
-          favoritos.</p>
+    <main class="bloco meio" style="margin-top: 150px; padding: 1rem;">
+      <p style="font-style: italic; font-size: 0.9rem">— O VERDADEIRO SABOR</p>
+      <h1 class="sabordeverdade" style="font-size: 80px">Sabor de verdade,<br> direto da brasa</h1>
 
-        <button style="margin-top: 2rem;display: flex; align-items: center; padding: 1.3rem;">Ver Cardápio </button>
+      <p>Tempero no ponto, brasa acesa e aquele sabor que reúne todo mundo.<br>
+        Confira nosso cardápio e escolha seus favoritos.</p>
 
-      </main>
+      <a class="botao" href="#cardapio" style="margin-top: 2rem; display: inline-block; padding: 1.3rem;">Ver Cardápio</a>
+    </main>
+  </div>
+
+  <section class="bloco dois" id="cardapio" style="margin-top: 10rem; padding: 1rem;">
+
+    <p style="font-size: 13px">— DA NOSSA BRASA PARA SUA MESA</p>
+
+    <h2 style="font-size: 3rem">Nosso <em>Cardápio</em></h2>
+    <p>Receitas caprichadas, ingredientes selecionados e o sabor inconfundível da brasa.</p>
+
+    <!-- Filtros: o data-filtro precisa ser igual ao data-categoria dos pratos -->
+    <div class="filtros" role="group" aria-label="Filtrar cardápio por categoria">
+      <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">
+        Todos <span class="contagem">00</span>
+      </button>
+      <button class="filtro" type="button" data-filtro="espetos" aria-pressed="false">
+        Espetos <span class="contagem">00</span>
+      </button>
+      <button class="filtro" type="button" data-filtro="acompanhamentos" aria-pressed="false">
+        Acompanhamentos <span class="contagem">00</span>
+      </button>
+      <button class="filtro" type="button" data-filtro="porcoes" aria-pressed="false">
+        Porções <span class="contagem">00</span>
+      </button>
+      <button class="filtro" type="button" data-filtro="bebidas" aria-pressed="false">
+        Bebidas <span class="contagem">00</span>
+      </button>
     </div>
 
-  </div>
+    <div class="cardapio-grade">
 
-  <div class="bloco dois" style="margin-top: 20rem; padding: 1rem;">
+      <article class="prato" data-categoria="espetos">
+        <div class="prato-foto">
+          <img src="img/espeto-alcatra.jpg" alt="Espeto de alcatra na brasa" loading="lazy">
+          <span class="etiqueta">Da casa</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Espeto de Alcatra</h3>
+            <span class="preco">R$ 18,00</span>
+          </div>
+          <p>Cortes macios, temperados no ponto e dourados na brasa.</p>
+          <p class="prato-categoria">Espetos</p>
+        </div>
+      </article>
 
-    <p style="margin-top: 10rem;display:flex; font-size:13px"> — DA NOSSA BRASA PARA SUA MESA </p>
+      <article class="prato" data-categoria="espetos">
+        <div class="prato-foto">
+          <img src="img/coracao-frango.jpg" alt="Espeto de coração de frango" loading="lazy">
+          <span class="etiqueta">Clássico</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Coração de Frango</h3>
+            <span class="preco">R$ 14,00</span>
+          </div>
+          <p>Marinado com temperos da casa e finalizado na brasa.</p>
+          <p class="prato-categoria">Espetos</p>
+        </div>
+      </article>
 
-    <h1 style=" font-size:3rem"> Nosso <span style="font-style:italic">Cardápio</span></h1>
-    <p>O melhor sabor de <span style="font-style:italic">CHURRASCO</span> da cidade<br> Confira nosso cardápio e escolha
-      seus
-      favoritos.</p>
+      <article class="prato" data-categoria="acompanhamentos">
+        <div class="prato-foto">
+          <img src="img/batata.jpg" alt="Batata da casa com molho especial" loading="lazy">
+          <span class="etiqueta">Queridinho</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Batata da Casa</h3>
+            <span class="preco">R$ 22,00</span>
+          </div>
+          <p>Batatas crocantes com ervas e molho especial.</p>
+          <p class="prato-categoria">Acompanhamentos</p>
+        </div>
+      </article>
 
-    <button>a</button>
-    <button>a</button>
-    <button>a</button>
-    <button>a</button>
+      <article class="prato" data-categoria="acompanhamentos">
+        <div class="prato-foto">
+          <img src="img/farofa.jpg" alt="Farofa da casa" loading="lazy">
+          <span class="etiqueta">Artesanal</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Farofa da Casa</h3>
+            <span class="preco">R$ 9,00</span>
+          </div>
+          <p>Farofa douradinha, feita com carinho e toque especial.</p>
+          <p class="prato-categoria">Acompanhamentos</p>
+        </div>
+      </article>
 
-  </div>
+      <!-- EXEMPLO: troque nome, preço, texto e foto. Copie o bloco para criar mais itens. -->
+      <article class="prato" data-categoria="porcoes">
+        <div class="prato-foto">
+          <img src="img/porcao.jpg" alt="Descreva a foto da porção" loading="lazy">
+          <span class="etiqueta">Para dividir</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Nome da porção</h3>
+            <span class="preco">R$ 00,00</span>
+          </div>
+          <p>Descrição da porção.</p>
+          <p class="prato-categoria">Porções</p>
+        </div>
+      </article>
+
+      <!-- EXEMPLO: bebida -->
+      <article class="prato" data-categoria="bebidas">
+        <div class="prato-foto">
+          <img src="img/bebida.jpg" alt="Descreva a foto da bebida" loading="lazy">
+          <span class="etiqueta">Geladinha</span>
+        </div>
+        <div class="prato-corpo">
+          <div class="prato-linha">
+            <h3>Nome da bebida</h3>
+            <span class="preco">R$ 00,00</span>
+          </div>
+          <p>Descrição da bebida.</p>
+          <p class="prato-categoria">Bebidas</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="aviso-precos">* Confira preços e disponibilidade no local.</p>
+  </section>
+
+  <section class="bloco contato" id="contato" style="margin-top: 6rem; padding: 1rem;">
+    <h2>Contato</h2>
+    <!-- TROQUE 5534999999999 pelo WhatsApp real (55 + DDD + número) -->
+    <p><a href="https://wa.me/5534999999999" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a></p>
+  </section>
+
+  <script>
+    const botoes = document.querySelectorAll('.filtro');
+    const pratos = document.querySelectorAll('.prato');
+
+    // Preenche a contagem de cada botão automaticamente
+    botoes.forEach(botao => {
+      const categoria = botao.dataset.filtro;
+      const total = categoria === 'todos'
+        ? pratos.length
+        : document.querySelectorAll('.prato[data-categoria="' + categoria + '"]').length;
+      botao.querySelector('.contagem').textContent = String(total).padStart(2, '0');
+    });
+
+    // Filtra ao clicar
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const categoria = botao.dataset.filtro;
+
+        botoes.forEach(b => {
+          b.classList.remove('ativo');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        botao.classList.add('ativo');
+        botao.setAttribute('aria-pressed', 'true');
+
+        pratos.forEach(prato => {
+          prato.hidden = categoria !== 'todos' && prato.dataset.categoria !== categoria;
+        });
+      });
+    });
+  </script>
 
 </body>
 
