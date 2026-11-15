@@ -50,168 +50,155 @@
     </main>
   </div>
 
-  <section class="bloco dois" id="cardapio" style="margin-top: 10rem; padding: 1rem;">
+  
+<section class="bloco dois" id="cardapio" style="margin-top: 10rem; padding: 1rem;">
 
-    <p style="font-size: 13px">— DA NOSSA BRASA PARA SUA MESA</p>
+  <p style="font-size: 13px">— DA NOSSA BRASA PARA SUA MESA</p>
 
-    <h2 style="font-size: 3rem">Nosso <em>Cardápio</em></h2>
-    <p>Receitas caprichadas, ingredientes selecionados e o sabor inconfundível da brasa.</p>
+  <h2 style="font-size: 3rem">Nosso <em>Cardápio</em></h2>
 
-    <!-- Filtros: o data-filtro precisa ser igual ao data-categoria dos pratos -->
-    <div class="filtros" role="group" aria-label="Filtrar cardápio por categoria">
-      <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">
-        Todos <span class="contagem">00</span>
-      </button>
-      <button class="filtro" type="button" data-filtro="espetos" aria-pressed="false">
-        Espetos <span class="contagem">00</span>
-      </button>
-      <button class="filtro" type="button" data-filtro="acompanhamentos" aria-pressed="false">
-        Acompanhamentos <span class="contagem">00</span>
-      </button>
-      <button class="filtro" type="button" data-filtro="porcoes" aria-pressed="false">
-        Porções <span class="contagem">00</span>
-      </button>
-      <button class="filtro" type="button" data-filtro="bebidas" aria-pressed="false">
-        Bebidas <span class="contagem">00</span>
-      </button>
-    </div>
+  <p>Receitas caprichadas, ingredientes selecionados e o sabor inconfundível da brasa.</p>
 
-    <div class="cardapio-grade">
+  <div class="filtros" role="group" aria-label="Filtrar cardápio por categoria">
 
-      <article class="prato" data-categoria="espetos">
-        <div class="prato-foto">
-          <img src="img/espeto-alcatra.jpg" alt="Espeto de alcatra na brasa" loading="lazy">
-          <span class="etiqueta">Da casa</span>
+    <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">
+      Todos <span class="contagem">00</span>
+    </button>
+
+    <button class="filtro" type="button" data-filtro="espetos" aria-pressed="false">
+      Espetos <span class="contagem">00</span>
+    </button>
+
+    <button class="filtro" type="button" data-filtro="acompanhamentos" aria-pressed="false">
+      Acompanhamentos <span class="contagem">00</span>
+    </button>
+
+    <button class="filtro" type="button" data-filtro="porcoes" aria-pressed="false">
+      Porções <span class="contagem">00</span>
+    </button>
+
+    <button class="filtro" type="button" data-filtro="bebidas" aria-pressed="false">
+      Bebidas <span class="contagem">00</span>
+    </button>
+
+  </div>
+
+  <div class="cardapio-grade">
+
+    <article class="prato" data-categoria="espetos">
+      <div class="prato-foto">
+        <img src="img/espeto-alcatra.jpg" alt="Espeto de alcatra na brasa" loading="lazy">
+        <span class="etiqueta">Da casa</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Espeto de Alcatra</h3>
+          <span class="preco">R$ 18,00</span>
         </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Espeto de Alcatra</h3>
-            <span class="preco">R$ 18,00</span>
-          </div>
-          <p>Cortes macios, temperados no ponto e dourados na brasa.</p>
-          <p class="prato-categoria">Espetos</p>
+
+        <p>Cortes macios, temperados no ponto e dourados na brasa.</p>
+
+        <p class="prato-categoria">Espetos</p>
+      </div>
+    </article>
+
+    <article class="prato" data-categoria="espetos">
+      <div class="prato-foto">
+        <img src="img/coracao-frango.jpg" alt="Espeto de coração de frango" loading="lazy">
+        <span class="etiqueta">Clássico</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Coração de Frango</h3>
+          <span class="preco">R$ 14,00</span>
         </div>
-      </article>
 
-      <article class="prato" data-categoria="espetos">
-        <div class="prato-foto">
-          <img src="img/coracao-frango.jpg" alt="Espeto de coração de frango" loading="lazy">
-          <span class="etiqueta">Clássico</span>
+        <p>Marinado com temperos da casa e finalizado na brasa.</p>
+
+        <p class="prato-categoria">Espetos</p>
+      </div>
+    </article>
+
+    <article class="prato" data-categoria="acompanhamentos">
+      <div class="prato-foto">
+        <img src="img/batata.jpg" alt="Batata da casa com molho especial" loading="lazy">
+        <span class="etiqueta">Queridinho</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Batata da Casa</h3>
+          <span class="preco">R$ 22,00</span>
         </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Coração de Frango</h3>
-            <span class="preco">R$ 14,00</span>
-          </div>
-          <p>Marinado com temperos da casa e finalizado na brasa.</p>
-          <p class="prato-categoria">Espetos</p>
+
+        <p>Batatas crocantes com ervas e molho especial.</p>
+
+        <p class="prato-categoria">Acompanhamentos</p>
+      </div>
+    </article>
+
+    <article class="prato" data-categoria="acompanhamentos">
+      <div class="prato-foto">
+        <img src="img/farofa.jpg" alt="Farofa da casa" loading="lazy">
+        <span class="etiqueta">Artesanal</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Farofa da Casa</h3>
+          <span class="preco">R$ 9,00</span>
         </div>
-      </article>
 
-      <article class="prato" data-categoria="acompanhamentos">
-        <div class="prato-foto">
-          <img src="img/batata.jpg" alt="Batata da casa com molho especial" loading="lazy">
-          <span class="etiqueta">Queridinho</span>
+        <p>Farofa douradinha, feita com carinho e toque especial.</p>
+
+        <p class="prato-categoria">Acompanhamentos</p>
+      </div>
+    </article>
+
+    <article class="prato" data-categoria="porcoes">
+      <div class="prato-foto">
+        <img src="img/porcao.jpg" alt="Porção de espetinhos" loading="lazy">
+        <span class="etiqueta">Para dividir</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Porção de Espetinhos</h3>
+          <span class="preco">R$ 36,00</span>
         </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Batata da Casa</h3>
-            <span class="preco">R$ 22,00</span>
-          </div>
-          <p>Batatas crocantes com ervas e molho especial.</p>
-          <p class="prato-categoria">Acompanhamentos</p>
+
+        <p>Uma seleção especial de espetinhos para aproveitar sem pressa.</p>
+
+        <p class="prato-categoria">Porções</p>
+      </div>
+    </article>
+
+    <article class="prato" data-categoria="bebidas">
+      <div class="prato-foto">
+        <img src="img/bebida.jpg" alt="Bebida gelada" loading="lazy">
+        <span class="etiqueta">Geladinha</span>
+      </div>
+
+      <div class="prato-corpo">
+        <div class="prato-linha">
+          <h3>Refrigerante</h3>
+          <span class="preco">R$ 7,00</span>
         </div>
-      </article>
 
-      <article class="prato" data-categoria="acompanhamentos">
-        <div class="prato-foto">
-          <img src="img/farofa.jpg" alt="Farofa da casa" loading="lazy">
-          <span class="etiqueta">Artesanal</span>
-        </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Farofa da Casa</h3>
-            <span class="preco">R$ 9,00</span>
-          </div>
-          <p>Farofa douradinha, feita com carinho e toque especial.</p>
-          <p class="prato-categoria">Acompanhamentos</p>
-        </div>
-      </article>
+        <p>Bebida gelada para acompanhar seu espetinho.</p>
 
-      <!-- EXEMPLO: troque nome, preço, texto e foto. Copie o bloco para criar mais itens. -->
-      <article class="prato" data-categoria="porcoes">
-        <div class="prato-foto">
-          <img src="img/porcao.jpg" alt="Descreva a foto da porção" loading="lazy">
-          <span class="etiqueta">Para dividir</span>
-        </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Nome da porção</h3>
-            <span class="preco">R$ 00,00</span>
-          </div>
-          <p>Descrição da porção.</p>
-          <p class="prato-categoria">Porções</p>
-        </div>
-      </article>
+        <p class="prato-categoria">Bebidas</p>
+      </div>
+    </article>
 
-      <!-- EXEMPLO: bebida -->
-      <article class="prato" data-categoria="bebidas">
-        <div class="prato-foto">
-          <img src="img/bebida.jpg" alt="Descreva a foto da bebida" loading="lazy">
-          <span class="etiqueta">Geladinha</span>
-        </div>
-        <div class="prato-corpo">
-          <div class="prato-linha">
-            <h3>Nome da bebida</h3>
-            <span class="preco">R$ 00,00</span>
-          </div>
-          <p>Descrição da bebida.</p>
-          <p class="prato-categoria">Bebidas</p>
-        </div>
-      </article>
+  </div>
 
-    </div>
+  <p class="aviso-precos">* Confira preços e disponibilidade no local.</p>
 
-    <p class="aviso-precos">* Confira preços e disponibilidade no local.</p>
-  </section>
+</section>
 
-  <section class="bloco contato" id="contato" style="margin-top: 6rem; padding: 1rem;">
-    <h2>Contato</h2>
-    <!-- TROQUE 5534999999999 pelo WhatsApp real (55 + DDD + número) -->
-    <p><a href="https://wa.me/5534999999999" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a></p>
-  </section>
-
-  <script>
-    const botoes = document.querySelectorAll('.filtro');
-    const pratos = document.querySelectorAll('.prato');
-
-    // Preenche a contagem de cada botão automaticamente
-    botoes.forEach(botao => {
-      const categoria = botao.dataset.filtro;
-      const total = categoria === 'todos'
-        ? pratos.length
-        : document.querySelectorAll('.prato[data-categoria="' + categoria + '"]').length;
-      botao.querySelector('.contagem').textContent = String(total).padStart(2, '0');
-    });
-
-    // Filtra ao clicar
-    botoes.forEach(botao => {
-      botao.addEventListener('click', () => {
-        const categoria = botao.dataset.filtro;
-
-        botoes.forEach(b => {
-          b.classList.remove('ativo');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        botao.classList.add('ativo');
-        botao.setAttribute('aria-pressed', 'true');
-
-        pratos.forEach(prato => {
-          prato.hidden = categoria !== 'todos' && prato.dataset.categoria !== categoria;
-        });
-      });
-    });
-  </script>
 
 </body>
 
