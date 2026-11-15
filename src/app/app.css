@@ -1,186 +1,184 @@
-
 /* ==========================
    CARDÁPIO
 ========================== */
 
 .dois {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
+
+    max-width: 1100px;
 }
 
 .dois h2 em {
-  color: #ff603c;
+    color: #ff603c;
 }
 
-.dois > p {
-  color: #aaa29a;
+.dois>p {
+    color: #aaa29a;
 }
 
 /* FILTROS */
 
 .filtros {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 30px 0 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 30px 0 22px;
 }
 
 .filtro {
-  background: transparent;
-  border: 1px solid #35302b;
-  color: #c5bdb5;
-  padding: 12px 14px;
-  cursor: pointer;
-  font-size: 11px;
-  transition: 0.2s;
+    background: transparent;
+    border: 1px solid #35302b;
+    color: #c5bdb5;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: 0.2s;
 }
 
 .filtro span {
-  margin-left: 8px;
-  font-size: 9px;
-  color: #93877c;
+    margin-left: 8px;
+    font-size: 9px;
+    color: #93877c;
 }
 
 .filtro:hover,
 .filtro.ativo {
-  background: #ff603c;
-  border-color: #ff603c;
-  color: white;
+    background: #ff603c;
+    border-color: #ff603c;
+    color: white;
 }
 
 .filtro.ativo span {
-  color: white;
+    color: white;
 }
 
 /* GRADE */
 
 .cardapio-grade {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
 }
 
 /* CARD */
 
 .prato {
-  background: #191715;
-  border: 1px solid #302c28;
-  overflow: hidden;
-  transition: transform 0.25s, border-color 0.25s;
+    background: #191715;
+    border: 1px solid #302c28;
+    overflow: hidden;
+    transition: transform 0.25s, border-color 0.25s;
 }
 
 .prato:hover {
-  transform: translateY(-4px);
-  border-color: #ff603c;
+    transform: translateY(-4px);
+    border-color: #ff603c;
 }
 
 .prato[hidden] {
-  display: none;
+    display: none;
 }
 
 /* FOTO */
 
 .prato-foto {
-  position: relative;
-  height: 185px;
-  overflow: hidden;
+    position: relative;
+    height: 185px;
+    overflow: hidden;
 }
 
 .prato-foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
 }
 
 .prato:hover .prato-foto img {
-  transform: scale(1.06);
+    transform: scale(1.06);
 }
 
 /* ETIQUETA */
 
 .etiqueta {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #171411e8;
-  border: 1px solid #51483f;
-  color: white;
-  padding: 6px 10px;
-  font-size: 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #171411e8;
+    border: 1px solid #51483f;
+    color: white;
+    padding: 6px 10px;
+    font-size: 10px;
 }
 
 /* CONTEÚDO */
 
 .prato-corpo {
-  padding: 14px;
+    padding: 14px;
 }
 
 .prato-linha {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .prato-linha h3 {
-  font-size: 13px;
-  margin: 0;
-  color: #f5f0e9;
+    font-size: 13px;
+    margin: 0;
+    color: #f5f0e9;
 }
 
 .preco {
-  color: #ff603c;
-  font-size: 12px;
-  font-weight: bold;
-  white-space: nowrap;
+    color: #ff603c;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.prato-corpo > p:not(.prato-categoria) {
-  color: #aaa29a;
-  font-size: 11px;
-  line-height: 1.6;
-  min-height: 36px;
-  margin: 12px 0 18px;
+.prato-corpo>p:not(.prato-categoria) {
+    color: #aaa29a;
+    font-size: 11px;
+    line-height: 1.6;
+    min-height: 36px;
+    margin: 12px 0 18px;
 }
 
 /* CATEGORIA */
 
 .prato-categoria {
-  border-top: 1px solid #35302b;
-  padding-top: 13px;
-  margin-bottom: 0;
-  color: #81766b;
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+    border-top: 1px solid #35302b;
+    padding-top: 13px;
+    margin-bottom: 0;
+    color: #81766b;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .aviso-precos {
-  font-size: 11px;
-  margin-top: 20px;
+    font-size: 11px;
+    margin-top: 20px;
 }
 
 /* RESPONSIVIDADE */
 
 @media (max-width: 900px) {
-  .cardapio-grade {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+    .cardapio-grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 550px) {
-  .cardapio-grade {
-    grid-template-columns: 1fr;
-  }
+    .cardapio-grade {
+        grid-template-columns: 1fr;
+    }
 
-  .prato-foto {
-    height: 220px;
-  }
+    .prato-foto {
+        height: 220px;
+    }
 
-  .prato-linha h3 {
-    font-size: 14px;
-  }
+    .prato-linha h3 {
+        font-size: 14px;
+    }
 }
